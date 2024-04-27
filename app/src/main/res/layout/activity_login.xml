@@ -8,7 +8,7 @@
     tools:context=".LoginActivity">
 
     <androidx.cardview.widget.CardView
-         android:id="@+id/app_logo"
+        android:id="@+id/login_App_logo"
         android:layout_width="160dp"
         android:layout_height="160dp"
         android:layout_centerHorizontal="true"
@@ -18,18 +18,21 @@
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
             android:scaleType="centerCrop"
             android:src="@drawable/delivery_logo" />
 
     </androidx.cardview.widget.CardView>
 
+
     <TextView
-        android:id="@+id/app_name"
+        android:id="@+id/login_app_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/app_logo"
+        android:layout_below="@id/login_App_logo"
         android:layout_centerInParent="true"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="8dp"
         android:fontFamily="sans-serif-black"
         android:text="@string/soporefooddelivery"
         android:textColor="@color/white"
@@ -37,48 +40,44 @@
         android:textStyle="italic" />
 
 
-    <androidx.cardview.widget.CardView
-        android:id="@+id/user_number"
-        android:layout_width="300dp"
-        android:layout_height="60dp"
-        android:layout_below="@id/app_logo"
-        android:layout_centerInParent="true"
-        android:layout_marginTop="90dp"
-        app:cardCornerRadius="20dp">
-
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:background="@color/white"
-            android:hint="@string/enter_your_phone_number"
-            android:inputType="phone"
-            android:textAlignment="center" />
-    </androidx.cardview.widget.CardView>
-
-    <androidx.cardview.widget.CardView
-        android:id="@+id/user_password"
-        android:layout_width="300dp"
-        android:layout_height="60dp"
-        android:layout_below="@id/user_number"
-        android:layout_centerInParent="true"
+    <EditText
+        android:id="@+id/login_mobile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/login_app_name"
+        android:layout_marginStart="25dp"
         android:layout_marginTop="20dp"
-        app:cardCornerRadius="20dp">
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/textviewrounded"
+        android:backgroundTint="@color/white"
+        android:drawableStart="@drawable/baseline_call_24"
+        android:drawablePadding="10dp"
+        android:hint="@string/mobile_number_10_digits"
+        android:inputType="phone"
+        android:padding="16dp" />
 
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:background="@color/white"
-            android:hint="@string/enter_your_password"
-            android:inputType="textPassword"
-            android:textAlignment="center" />
 
-    </androidx.cardview.widget.CardView>
+    <EditText
+        android:id="@+id/login_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/login_mobile"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
+        android:background="@drawable/textviewrounded"
+        android:backgroundTint="@color/white"
+        android:drawableStart="@drawable/password_lock2"
+        android:drawablePadding="10dp"
+        android:hint="@string/enter_your_password"
+        android:inputType="textPassword"
+        android:padding="16dp" />
 
     <Button
         android:id="@+id/logInBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/user_password"
+        android:layout_below="@id/login_password"
         android:layout_centerInParent="true"
         android:layout_marginTop="20dp"
         android:backgroundTint="@color/white"
@@ -93,7 +92,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/logInBtn"
         android:layout_centerInParent="true"
-        android:layout_marginTop="6dp"
+        android:layout_marginTop="5dp"
         android:text="@string/forgot_password"
         android:textColor="@color/white"
         android:textSize="18sp"
@@ -105,7 +104,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_marginStart="45dp"
-        android:layout_marginBottom="20dp"
+        android:layout_marginBottom="30dp"
         android:text="@string/don_t_have_an_account_sign_up_now"
         android:textColor="@color/white"
         android:textSize="18sp"
@@ -116,7 +115,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:layout_marginBottom="20dp"
+        android:layout_marginBottom="30dp"
         android:layout_toEndOf="@id/donNotHaveAnaAccount"
         android:text="@string/sign_up_now"
         android:textColor="@color/white"

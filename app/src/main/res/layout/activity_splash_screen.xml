@@ -7,11 +7,11 @@
 
     <androidx.cardview.widget.CardView
         android:id="@+id/delivery_logo"
-        android:layout_width="300dp"
-        android:layout_height="300dp"
-        app:cardCornerRadius="70dp"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        app:cardCornerRadius="50dp"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="150dp">
+        android:layout_marginTop="180dp">
 
         <ImageView
             android:layout_width="match_parent"
@@ -27,11 +27,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/delivery_logo"
-        android:layout_marginStart="40dp"
+        android:layout_centerHorizontal="true"
         android:layout_marginTop="15dp"
         android:fontFamily="sans-serif-black"
         android:text="@string/soporefooddelivery"
         android:textColor="@color/white"
-        android:textSize="35sp"
+        android:textSize="32sp"
         android:textStyle="italic" />
 </RelativeLayout>
