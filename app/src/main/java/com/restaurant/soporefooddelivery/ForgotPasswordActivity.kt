@@ -13,8 +13,9 @@ class ForgotPasswordActivity : AppCompatActivity() {
 
         val nextBtn = findViewById<Button>(R.id.forgot_password_Btn)
 
-        nextBtn.setOnClickListener { intent = Intent(this,LoginActivity::class.java)
-        startActivity(intent)
+        nextBtn.setOnClickListener {
+            var intent = Intent(this, LoginActivity::class.java)
+            startActivity(intent)
             finish()
 
             Toast.makeText(this, "Password send to Registered Mobile Number", Toast.LENGTH_SHORT).show()}

@@ -16,4 +16,10 @@
     <string name="register">Sign up</string>
     <string name="welcome_to_main_screen">Welcome To main Screen</string>
     <string name="next">Next</string>
+    <string name="dashboard">Dashboard</string>
+    <string name="favourites">Favourites</string>
+    <string name="profile">Profile</string>
+    <string name="about_app">About App</string>
+    <string name="open_drawer">Open Drawer</string>
+    <string name="close_drawer">close Drawer</string>
 </resources>
